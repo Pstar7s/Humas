@@ -39,9 +39,18 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
             font-size: 1.5rem;
             font-weight: bold;
             color: #A51C30;
+        }
+        
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -78,10 +87,59 @@
         /* Hero Section */
         .hero {
             margin-top: 80px;
-            background: linear-gradient(135deg, #A51C30 0%, #8B1528 100%);
+            background: linear-gradient(rgba(165, 28, 48, 0.85), rgba(139, 21, 40, 0.85)), 
+                        url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2000') center/cover;
             color: white;
             padding: 6rem 2rem;
             text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 0;
+        }
+        
+        .hero > div {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .hero-logo img {
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+        
+        .hero-logo-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #A51C30 0%, #8B1528 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
         }
 
         .hero h1 {
@@ -379,7 +437,10 @@
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">SMKN 2 KEDIRI</div>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/120px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo" class="logo-img">
+                <span>SMKN 2 KEDIRI</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#program">Program Keahlian</a></li>
@@ -398,6 +459,12 @@
     <!-- Hero Section -->
     <section class="hero" id="beranda">
         <div class="fade-in">
+            <div class="hero-logo">
+                <!-- Ganti src dengan URL logo SMKN 2 Kediri yang sebenarnya -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/240px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo SMKN 2 Kediri">
+                <!-- Atau gunakan placeholder jika belum ada logo -->
+                <!-- <div class="hero-logo-placeholder">S2K</div> -->
+            </div>
             <h1>Pendidikan Kejuruan,</h1>
             <h2>Masa Depan Cemerlang</h2>
             <p>Setiap hari, siswa, guru, dan alumni SMKN 2 Kediri berkomitmen mengembangkan keahlian, pengetahuan, dan karakter untuk berkontribusi pada masyarakat dan menciptakan dampak positif bagi bangsa.</p>
