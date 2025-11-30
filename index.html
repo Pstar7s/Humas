@@ -311,6 +311,54 @@
             text-decoration: underline;
         }
 
+        /* Management Team */
+        .management-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .management-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .management-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .management-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #A51C30 0%, #8B1528 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .management-card h4 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .management-role {
+            color: #A51C30;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
         /* Stats Section */
         .stats {
             background: #A51C30;
@@ -533,8 +581,8 @@
     <div class="quote-section">
         <div class="quote-container">
             <p class="quote-text">"Pendidikan kejuruan bukan hanya tentang keterampilan teknis, tetapi juga tentang membentuk karakter, etos kerja, dan jiwa wirausaha untuk masa depan yang lebih baik."</p>
-            <p class="quote-author">Drs. Wahyudi, M.Pd</p>
-            <p class="quote-role">Kepala SMKN 2 Kediri</p>
+            <p class="quote-author">Nikmatus Sahadah, S.Pd., M.Pd.</p>
+            <p class="quote-role">Kepala Sekolah SMKN 2 Kediri</p>
         </div>
     </div>
 
@@ -626,11 +674,38 @@
         <h2 class="section-title">Tentang SMKN 2 Kediri</h2>
         <div style="max-width: 900px; margin: 0 auto; text-align: center;">
             <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
-                SMK Negeri 2 Kediri adalah lembaga pendidikan kejuruan terkemuka yang telah berdiri sejak tahun 1965. Dengan visi menjadi pusat keunggulan pendidikan kejuruan yang menghasilkan lulusan profesional, berkarakter, dan berdaya saing global, kami terus berinovasi dalam metode pembelajaran dan kemitraan dengan industri.
+                SMK Negeri 2 Kediri adalah lembaga pendidikan kejuruan terkemuka yang telah berdiri sejak tahun 1965. Bermula sebagai SMEA Negeri Kediri atas prakarsa Wali Kota Kediri Bapak Anwar Zainudin, sekolah ini terus berkembang dan kini menempati dua lokasi strategis di Jl. Veteran No. 5 dan Jl. Monginsidi No. 37, Kediri.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">
-                Kami percaya bahwa setiap siswa memiliki potensi luar biasa. Dengan fasilitas modern, guru berpengalaman, dan kurikulum yang relevan dengan kebutuhan industri, kami mempersiapkan siswa tidak hanya untuk mendapatkan pekerjaan, tetapi untuk menjadi pemimpin dan inovator di bidangnya.
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 3rem;">
+                Dengan visi menjadi pusat keunggulan pendidikan kejuruan yang menghasilkan lulusan profesional, berkarakter, dan berdaya saing global, kami terus berinovasi dalam metode pembelajaran dan kemitraan dengan industri. Kami percaya bahwa setiap siswa memiliki potensi luar biasa untuk menjadi pemimpin dan inovator di bidangnya.
             </p>
+        </div>
+
+        <!-- Management Team -->
+        <div style="margin-top: 4rem;">
+            <h3 style="text-align: center; font-size: 2rem; color: #A51C30; margin-bottom: 3rem; font-weight: 300;">Tim Manajemen Sekolah</h3>
+            <div class="management-grid">
+                <div class="management-card">
+                    <div class="management-icon">👤</div>
+                    <h4>Nikmatus Sahadah, S.Pd., M.Pd.</h4>
+                    <p class="management-role">Kepala Sekolah</p>
+                </div>
+                <div class="management-card">
+                    <div class="management-icon">📚</div>
+                    <h4>Idham Muttaqien, S.Pd.</h4>
+                    <p class="management-role">Wakil Kepala Sekolah Bidang Kurikulum</p>
+                </div>
+                <div class="management-card">
+                    <div class="management-icon">💼</div>
+                    <h4>Drs. Achmad Rofiq Irmawan, M.Pd.</h4>
+                    <p class="management-role">Koordinator Program Keahlian</p>
+                </div>
+                <div class="management-card">
+                    <div class="management-icon">📋</div>
+                    <h4>Luky Rosida Rahmawati, S.AB.</h4>
+                    <p class="management-role">Kepala Kompetensi Keahlian</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -639,7 +714,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>SMKN 2 Kediri</h4>
-                <p>Jl. Veteran No. 1, Kediri<br>Jawa Timur, Indonesia 64112</p>
+                <p>Jl. Veteran No. 5 Kediri<br>Jl. Monginsidi No. 37 Kediri<br>Kec. Mojoroto, Kota Kediri<br>Jawa Timur, Indonesia</p>
                 <p>Telp: (0354) 123456</p>
                 <p>Email: info@smkn2kediri.sch.id</p>
             </div>
