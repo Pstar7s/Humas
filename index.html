@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMKN 2 KOTA KEDIRI - Mencetak Generasi Profesional dan Berkarakter</title>
+    <title>SMKN 2 Kediri - Mencetak Generasi Profesional dan Berkarakter</title>
     <style>
         * {
             margin: 0;
@@ -208,6 +208,29 @@
             justify-content: center;
             font-size: 3rem;
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .program-image svg {
+            width: 80px;
+            height: 80px;
+            fill: white;
+            z-index: 2;
+        }
+        
+        .program-image::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
         }
 
         .program-content {
@@ -508,14 +531,14 @@
     <section class="hero" id="beranda">
         <div class="fade-in">
             <div class="hero-logo">
-                <!-- Ganti src dengan URL logo SMKN 2 KOTA KEDIRI yang sebenarnya -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/240px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo SMKN 2 KOTA KEDIRI">
+                <!-- Ganti src dengan URL logo SMKN 2 Kediri yang sebenarnya -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/240px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo SMKN 2 Kota Kediri">
                 <!-- Atau gunakan placeholder jika belum ada logo -->
                 <!-- <div class="hero-logo-placeholder">S2K</div> -->
             </div>
             <h1>Pendidikan Kejuruan,</h1>
             <h2>Masa Depan Cemerlang</h2>
-            <p>Setiap hari, siswa, guru, dan alumni SMKN 2 KOTA KEDIRI berkomitmen mengembangkan keahlian, pengetahuan, dan karakter untuk berkontribusi pada masyarakat dan menciptakan dampak positif bagi bangsa.</p>
+            <p>Setiap hari, siswa, guru, dan alumni SMKN 2 Kota Kediri berkomitmen mengembangkan keahlian, pengetahuan, dan karakter untuk berkontribusi pada masyarakat dan menciptakan dampak positif bagi bangsa.</p>
         </div>
     </section>
 
@@ -523,63 +546,92 @@
     <section class="section" id="program">
         <h2 class="section-title">Program Keahlian Unggulan</h2>
         <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: #666;">
-            SMKN 2 KOTA KEDIRI menawarkan 7 program keahlian di bidang Bisnis dan Teknologi yang dirancang untuk mempersiapkan siswa menghadapi tantangan dunia kerja dan industri modern.
+            SMKN 2 Kota Kediri menawarkan 7 program keahlian di bidang Bisnis, Teknologi, dan Industri Kreatif yang dirancang untuk mempersiapkan siswa menghadapi tantangan dunia kerja modern.
         </p>
 
         <div class="program-grid">
             <div class="program-card">
-                <div class="program-image">💼</div>
-                <div class="program-content">
-                    <h3>Akuntansi</h3>
-                    <p>Program keahlian yang mempersiapkan siswa menjadi tenaga profesional di bidang akuntansi, menguasai pembukuan, pelaporan keuangan, perpajakan, dan sistem informasi akuntansi dengan standar industri.</p>
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+                    </svg>
                 </div>
-            </div>
-
-            <div class="program-card">
-                <div class="program-image">📈</div>
-                <div class="program-content">
-                    <h3>Pemasaran</h3>
-                    <p>Siswa dilatih menjadi ahli pemasaran yang handal, menguasai strategi marketing, riset pasar, promosi, dan penjualan untuk mengembangkan bisnis di era digital.</p>
-                </div>
-            </div>
-
-            <div class="program-card">
-                <div class="program-image">📝</div>
-                <div class="program-content">
-                    <h3>Sekretaris</h3>
-                    <p>Program yang mempersiapkan siswa menjadi sekretaris profesional dengan kemampuan administrasi perkantoran, manajemen dokumen, korespondensi, dan public relations yang excellent.</p>
-                </div>
-            </div>
-
-            <div class="program-card">
-                <div class="program-image">💻</div>
                 <div class="program-content">
                     <h3>Teknik Komputer dan Jaringan</h3>
-                    <p>Siswa dibekali keahlian dalam instalasi, konfigurasi, dan pemeliharaan sistem komputer serta infrastruktur jaringan untuk menjadi teknisi IT yang kompeten.</p>
+                    <p>Siswa dibekali keahlian dalam instalasi, konfigurasi, pemeliharaan sistem komputer dan infrastruktur jaringan untuk menjadi teknisi IT dan administrator jaringan profesional.</p>
                 </div>
             </div>
 
             <div class="program-card">
-                <div class="program-image">🎨</div>
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                    </svg>
+                </div>
                 <div class="program-content">
-                    <h3>Multi Media</h3>
-                    <p>Program yang fokus pada desain grafis, animasi, video editing, fotografi, dan produksi konten digital untuk industri kreatif dan media modern.</p>
+                    <h3>Pemasaran</h3>
+                    <p>Program yang mempersiapkan siswa menjadi ahli pemasaran handal, menguasai strategi marketing, riset pasar, promosi, dan penjualan di era digital modern.</p>
                 </div>
             </div>
 
             <div class="program-card">
-                <div class="program-image">🏦</div>
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                    </svg>
+                </div>
                 <div class="program-content">
-                    <h3>Perbankan</h3>
-                    <p>Siswa dididik menjadi profesional perbankan yang menguasai layanan keuangan, operasional bank, customer service, dan produk-produk perbankan.</p>
+                    <h3>Manajemen Perkantoran dan Layanan Bisnis</h3>
+                    <p>Siswa dididik menjadi profesional administrasi perkantoran dengan kemampuan manajemen dokumen, korespondensi, customer service, dan operasional bisnis yang excellent.</p>
                 </div>
             </div>
 
             <div class="program-card">
-                <div class="program-image">✈️</div>
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                    </svg>
+                </div>
                 <div class="program-content">
-                    <h3>Pariwisata</h3>
-                    <p>Program keahlian yang mempersiapkan siswa bekerja di industri pariwisata dan perhotelan, menguasai pelayanan tamu, tour guiding, dan manajemen destinasi wisata.</p>
+                    <h3>Akuntansi dan Keuangan Lembaga</h3>
+                    <p>Program keahlian yang mempersiapkan siswa menguasai pembukuan, pelaporan keuangan, perpajakan, dan sistem informasi akuntansi untuk lembaga publik maupun swasta.</p>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z"/>
+                    </svg>
+                </div>
+                <div class="program-content">
+                    <h3>Usaha Layanan Pariwisata</h3>
+                    <p>Siswa dilatih menjadi profesional pariwisata yang menguasai tour guiding, ticketing, manajemen destinasi wisata, dan pelayanan wisatawan berkelas internasional.</p>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/>
+                    </svg>
+                </div>
+                <div class="program-content">
+                    <h3>Perhotelan</h3>
+                    <p>Program yang fokus pada pelayanan hotel, housekeeping, front office, food & beverage service untuk menghasilkan tenaga hospitality profesional.</p>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-image">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+                        <circle cx="12" cy="12" r="1.5"/>
+                    </svg>
+                </div>
+                <div class="program-content">
+                    <h3>Broadcasting dan Perfilman</h3>
+                    <p>Siswa dibekali keahlian produksi konten audio visual, penyiaran, sinematografi, editing video, dan produksi film untuk industri kreatif dan media broadcasting.</p>
                 </div>
             </div>
         </div>
@@ -590,7 +642,7 @@
         <div class="quote-container">
             <p class="quote-text">"Pendidikan kejuruan bukan hanya tentang keterampilan teknis, tetapi juga tentang membentuk karakter, etos kerja, dan jiwa wirausaha untuk masa depan yang lebih baik."</p>
             <p class="quote-author">Nikmatus Sahadah, S.Pd., M.Pd.</p>
-            <p class="quote-role">Kepala Sekolah SMKN 2 KOTA KEDIRI</p>
+            <p class="quote-role">Kepala Sekolah SMKN 2 Kota Kediri</p>
         </div>
     </div>
 
@@ -679,10 +731,10 @@
 
     <!-- About Section -->
     <section class="section" id="tentang">
-        <h2 class="section-title">Tentang SMKN 2 KOTA KEDIRI</h2>
+        <h2 class="section-title">Tentang SMKN 2 Kota Kediri</h2>
         <div style="max-width: 900px; margin: 0 auto; text-align: center;">
             <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
-                SMK Negeri 2 Kediri adalah lembaga pendidikan kejuruan terkemuka yang telah berdiri sejak tahun 1965. Bermula sebagai SMEA Negeri Kediri atas prakarsa Wali Kota Kediri Bapak Anwar Zainudin, sekolah ini terus berkembang dan kini menempati dua lokasi strategis di Jl. Veteran No. 5 dan Jl. Monginsidi No. 37, Kediri.
+                SMK Negeri 2 Kota Kediri adalah lembaga pendidikan kejuruan terkemuka yang telah berdiri sejak tahun 1965. Bermula sebagai SMEA Negeri Kediri atas prakarsa Wali Kota Kediri Bapak Anwar Zainudin, sekolah ini terus berkembang dan kini menempati dua lokasi strategis di Jl. Veteran No. 5 dan Jl. Monginsidi No. 37, Kediri.
             </p>
             <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 3rem;">
                 Dengan visi menjadi pusat keunggulan pendidikan kejuruan yang menghasilkan lulusan profesional, berkarakter, dan berdaya saing global, kami terus berinovasi dalam metode pembelajaran dan kemitraan dengan industri. Kami percaya bahwa setiap siswa memiliki potensi luar biasa untuk menjadi pemimpin dan inovator di bidangnya.
@@ -721,20 +773,20 @@
     <footer id="kontak">
         <div class="footer-content">
             <div class="footer-section">
-                <h4>SMKN 2 KOTA KEDIRI</h4>
+                <h4>SMKN 2 Kota Kediri</h4>
                 <p>Jl. Veteran No. 5 Kediri<br>Jl. Monginsidi No. 37 Kediri<br>Kec. Mojoroto, Kota Kediri<br>Jawa Timur, Indonesia</p>
                 <p>Telp: (0354) 123456</p>
                 <p>Email: info@smkn2kediri.sch.id</p>
             </div>
             <div class="footer-section">
                 <h4>Program Keahlian</h4>
-                <a href="#">Akuntansi</a>
-                <a href="#">Pemasaran</a>
-                <a href="#">Sekretaris</a>
                 <a href="#">Teknik Komputer dan Jaringan</a>
-                <a href="#">Multi Media</a>
-                <a href="#">Perbankan</a>
-                <a href="#">Pariwisata</a>
+                <a href="#">Pemasaran</a>
+                <a href="#">Manajemen Perkantoran dan Layanan Bisnis</a>
+                <a href="#">Akuntansi dan Keuangan Lembaga</a>
+                <a href="#">Usaha Layanan Pariwisata</a>
+                <a href="#">Perhotelan</a>
+                <a href="#">Broadcasting dan Perfilman</a>
             </div>
             <div class="footer-section">
                 <h4>Tautan Cepat</h4>
@@ -754,7 +806,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; AMANDA APRILLIA | TUGAS AKHIR PUBLIC RELATION | MPI UIN SYEKH WASIL KEDIRI | 2025.</p>
+            <p>&copy; 2024 SMKN 2 Kota Kediri. Seluruh hak cipta dilindungi.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+                Website ini dibuat sebagai Tugas Akhir Mata Kuliah Public Relations<br>
+                oleh <strong style="color: #A51C30;">Amanda Aprillia</strong> - Jurusan MPI<br>
+                <strong>UIN Sayyid Ali Rahmatullah Tulungagung</strong>
+            </p>
         </div>
     </footer>
 
